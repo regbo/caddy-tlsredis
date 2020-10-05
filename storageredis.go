@@ -136,7 +136,7 @@ func (RedisStorage) CaddyModule() caddy.ModuleInfo {
 }
 
 // CertMagicStorage converts s to a certmagic.Storage instance.
-func (rd RedisStorage) CertMagicStorage() (certmagic.Storage, error) {
+func (rd *RedisStorage) CertMagicStorage() (certmagic.Storage, error) {
 	return rd, nil
 }
 
